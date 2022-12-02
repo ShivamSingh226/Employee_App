@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>People_Data</name>
+    </assembly>
+    <members>
+        <member name="M:People_Data.Controllers.PeopleController.Get">
+            <summary>
+            Gets the list of all People.
+            </summary>
+            <returns>The list of People.</returns>
+        </member>
+        <member name="M:People_Data.Controllers.PeopleController.Get(System.Guid)">
+            <summary>
+            Gets the information of a person by his Id.
+            </summary>
+            <returns>The information of a  required person.</returns>
+        </member>
+        <member name="M:People_Data.Controllers.PeopleController.Post(People_Data.HTTP.PeopleModel)">
+            <summary>
+            Creates an Object of People.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/SaveOrder
+                {        
+                  "firstName": "Mike",
+                  "lastName": "Andrew",
+                  "age": 27        
+                }
+            </remarks>
+            <param name="People"></param>  
+            /// <returns>A newly created employee</returns>
+            <response code="201">Succes!!</response>
+            <response code="400">Bad Response</response>  
+        </member>
+        <member name="M:People_Data.Controllers.PeopleController.Put(People_Data.HTTP.PeopleModel)">
+            <summary>
+            Update an Object of People.
+            </summary>
+            <param name = "People" > </param >
+            /// <returns>A newly created employee</returns>
+            <response code="204">No Content</response>
+            <response code="404">Record Not Found</response>
+            <response code="400">Bad Response</response>
+        </member>
+        <member name="M:People_Data.Controllers.PeopleController.Delete(System.Guid)">
+            <summary>
+            Deletes an Object of People.
+            </summary>
+            <param name = "People" ></param >
+            /// <returns>A newly created employee</returns>
+            <response code="204">No Content</response>
+            <response code="404">Record Not Found</response>
+            <response code="400">Bad Response</response>
+        </member>
+    </members>
+</doc>
